@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name mini_light)(type Legacy)(uri ${KIPRJMOD}/mini_light.lib)(options "")(descr ""))
+)

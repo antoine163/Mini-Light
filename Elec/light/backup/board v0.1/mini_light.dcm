@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AL8860WT-7
+D 40V 1.5A Buck Led Driver
+K Buck Led Driver
+F https://www.diodes.com/assets/Datasheets/AL8860.pdf
+$ENDCMP
+#
+$CMP TPS92513
+D 1.5A Buck LED Driver with Integrated Analog Current Adjust
+K LED driver
+F http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=TPS92513&&fileType=pdf
+$ENDCMP
+#
+#End Doc Library

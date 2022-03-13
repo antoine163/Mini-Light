@@ -1,0 +1,460 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Mini Light"
+Date "2020-06-07"
+Rev "V0.1"
+Comp "antoine163"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR02
+U 1 1 5C39E67B
+P 2150 4150
+F 0 "#PWR02" H 2150 3900 50  0001 C CNN
+F 1 "GND" H 2155 3977 50  0000 C CNN
+F 2 "" H 2150 4150 50  0001 C CNN
+F 3 "" H 2150 4150 50  0001 C CNN
+	1    2150 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L mini_light:AL8860WT-7 U1
+U 1 1 5D6483D2
+P 5400 2150
+F 0 "U1" H 5350 2465 50  0000 C CNN
+F 1 "AL8860WT-7" H 5350 2374 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-5" H 5350 2350 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/AL8860.pdf" H 5350 2350 50  0001 C CNN
+	1    5400 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2100 4850 2100
+Wire Wire Line
+	4850 1600 4850 2100
+Wire Wire Line
+	5750 2250 5850 2250
+Wire Wire Line
+	5850 2250 5850 3100
+Wire Wire Line
+	5850 3100 6050 3100
+Wire Wire Line
+	6050 3000 6050 3100
+Wire Wire Line
+	6050 2500 6050 2600
+Wire Wire Line
+	6050 1600 6050 1700
+$Comp
+L Device:LED_ALT D1
+U 1 1 5D6494B6
+P 6050 2350
+F 0 "D1" V 6088 2233 50  0000 R CNN
+F 1 "JE2835 HE" V 5997 2233 50  0000 R CNN
+F 2 "mini_light:LED_Cree-JE" H 6050 2350 50  0001 C CNN
+F 3 "https://www.cree.com/led-components/media/documents/data-sheet-JSeries-2835-HE.pdf" H 6050 2350 50  0001 C CNN
+F 4 "JE2835AWT-00-0000-0C0A0UG740E" V 6050 2350 50  0001 C CNN "Ref"
+	1    6050 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 5D648CFF
+P 6050 2850
+F 0 "L1" V 6240 2850 50  0000 C CNN
+F 1 "47uH" V 6149 2850 50  0000 C CNN
+F 2 "Inductor_SMD:L_Bourns_SRN6045TA" H 6050 2850 50  0001 C CNN
+F 3 "~" H 6050 2850 50  0001 C CNN
+F 4 "SRN5040TA-47K" V 6050 2850 50  0001 C CNN "Ref"
+	1    6050 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D5
+U 1 1 5D64C25E
+P 8700 2050
+F 0 "D5" V 8654 2129 50  0000 L CNN
+F 1 "PMEG40T10ERX" V 8745 2129 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 8700 2050 50  0001 C CNN
+F 3 "~" H 8700 2050 50  0001 C CNN
+	1    8700 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_ALT D2
+U 1 1 5D7739A1
+P 6700 2350
+F 0 "D2" V 6738 2233 50  0000 R CNN
+F 1 "JE2835 HE" V 6647 2233 50  0000 R CNN
+F 2 "mini_light:LED_Cree-JE" H 6700 2350 50  0001 C CNN
+F 3 "https://www.cree.com/led-components/media/documents/data-sheet-JSeries-2835-HE.pdf" H 6700 2350 50  0001 C CNN
+F 4 "JE2835AWT-00-0000-0C0A0UG740E" V 6700 2350 50  0001 C CNN "Ref"
+	1    6700 2350
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6050 2600
+Wire Wire Line
+	6050 2600 6050 2700
+Connection ~ 6050 1600
+Wire Wire Line
+	8700 1600 8700 1900
+Wire Wire Line
+	8700 2200 8700 3100
+$Comp
+L Device:C C1
+U 1 1 5D7D6AAE
+P 3600 2400
+F 0 "C1" H 3715 2446 50  0000 L CNN
+F 1 "10uF" H 3715 2355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3638 2250 50  0001 C CNN
+F 3 "~" H 3600 2400 50  0001 C CNN
+	1    3600 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5D7D6AB4
+P 4050 2400
+F 0 "C2" H 4165 2446 50  0000 L CNN
+F 1 "100nF" H 4165 2355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4088 2250 50  0001 C CNN
+F 3 "~" H 4050 2400 50  0001 C CNN
+	1    4050 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5D7DF523
+P 5350 2600
+F 0 "#PWR07" H 5350 2350 50  0001 C CNN
+F 1 "GND" H 5355 2427 50  0000 C CNN
+F 2 "" H 5350 2600 50  0001 C CNN
+F 3 "" H 5350 2600 50  0001 C CNN
+	1    5350 2600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5D7F223F
+P 4050 2650
+F 0 "#PWR06" H 4050 2400 50  0001 C CNN
+F 1 "GND" H 4055 2477 50  0000 C CNN
+F 2 "" H 4050 2650 50  0001 C CNN
+F 3 "" H 4050 2650 50  0001 C CNN
+	1    4050 2650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5D7F24A8
+P 3600 2650
+F 0 "#PWR05" H 3600 2400 50  0001 C CNN
+F 1 "GND" H 3605 2477 50  0000 C CNN
+F 2 "" H 3600 2650 50  0001 C CNN
+F 3 "" H 3600 2650 50  0001 C CNN
+	1    3600 2650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 2100 3600 2250
+Wire Wire Line
+	3600 2100 4050 2100
+Wire Wire Line
+	4050 2250 4050 2100
+Connection ~ 4050 2100
+Wire Wire Line
+	4050 2550 4050 2650
+Wire Wire Line
+	3600 2550 3600 2650
+Wire Wire Line
+	5350 2450 5350 2600
+$Comp
+L power:VCC #PWR04
+U 1 1 5DA25F12
+P 3600 1900
+F 0 "#PWR04" H 3600 1750 50  0001 C CNN
+F 1 "VCC" H 3617 2073 50  0000 C CNN
+F 2 "" H 3600 1900 50  0001 C CNN
+F 3 "" H 3600 1900 50  0001 C CNN
+	1    3600 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 2100 3600 1900
+Connection ~ 3600 2100
+$Comp
+L Device:LED_ALT D3
+U 1 1 5DA59699
+P 7350 2350
+F 0 "D3" V 7388 2233 50  0000 R CNN
+F 1 "JE2835 HE" V 7297 2233 50  0000 R CNN
+F 2 "mini_light:LED_Cree-JE" H 7350 2350 50  0001 C CNN
+F 3 "https://www.cree.com/led-components/media/documents/data-sheet-JSeries-2835-HE.pdf" H 7350 2350 50  0001 C CNN
+F 4 "JE2835AWT-00-0000-0C0A0UG740E" V 7350 2350 50  0001 C CNN "Ref"
+	1    7350 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_ALT D4
+U 1 1 5DA5B5DE
+P 8000 2350
+F 0 "D4" V 8038 2233 50  0000 R CNN
+F 1 "JE2835 HE" V 7947 2233 50  0000 R CNN
+F 2 "mini_light:LED_Cree-JE" H 8000 2350 50  0001 C CNN
+F 3 "https://www.cree.com/led-components/media/documents/data-sheet-JSeries-2835-HE.pdf" H 8000 2350 50  0001 C CNN
+F 4 "JE2835AWT-00-0000-0C0A0UG740E" V 8000 2350 50  0001 C CNN "Ref"
+	1    8000 2350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6050 3100 8700 3100
+Connection ~ 6050 3100
+Text GLabel 2150 3800 2    50   Input ~ 0
+Ctrl
+Wire Wire Line
+	8000 2500 8000 2600
+Wire Wire Line
+	6050 2600 6700 2600
+Wire Wire Line
+	7350 2500 7350 2600
+Connection ~ 7350 2600
+Wire Wire Line
+	7350 2600 8000 2600
+Wire Wire Line
+	6700 2500 6700 2600
+Connection ~ 6700 2600
+Wire Wire Line
+	6700 2600 7350 2600
+Wire Wire Line
+	4950 2250 4850 2250
+Wire Wire Line
+	4850 1600 6050 1600
+$Comp
+L Device:R R1
+U 1 1 5EAC6396
+P 6050 1850
+F 0 "R1" H 5980 1804 50  0000 R CNN
+F 1 "1R" H 5980 1895 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5980 1850 50  0001 C CNN
+F 3 "~" H 6050 1850 50  0001 C CNN
+	1    6050 1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR03
+U 1 1 5EDCFA76
+P 2150 3450
+F 0 "#PWR03" H 2150 3300 50  0001 C CNN
+F 1 "VCC" H 2167 3623 50  0000 C CNN
+F 2 "" H 2150 3450 50  0001 C CNN
+F 3 "" H 2150 3450 50  0001 C CNN
+	1    2150 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 2000 6050 2100
+Wire Wire Line
+	7350 2000 7350 2100
+Wire Wire Line
+	8000 2000 8000 2100
+Wire Wire Line
+	6050 1600 6700 1600
+Connection ~ 6700 1600
+Wire Wire Line
+	6700 1700 6700 1600
+Wire Wire Line
+	6700 1600 7350 1600
+Connection ~ 7350 1600
+Wire Wire Line
+	7350 1700 7350 1600
+Wire Wire Line
+	8000 1600 7350 1600
+Wire Wire Line
+	8000 1600 8700 1600
+Connection ~ 8000 1600
+Wire Wire Line
+	8000 1600 8000 1700
+Wire Wire Line
+	6700 2000 6700 2100
+Wire Wire Line
+	5750 2100 6050 2100
+Connection ~ 6050 2100
+Wire Wire Line
+	6050 2100 6050 2200
+Wire Wire Line
+	6050 2100 6700 2100
+Connection ~ 6700 2100
+Wire Wire Line
+	6700 2100 6700 2200
+Wire Wire Line
+	6700 2100 7350 2100
+Connection ~ 7350 2100
+Wire Wire Line
+	7350 2100 7350 2200
+Wire Wire Line
+	7350 2100 8000 2100
+Connection ~ 8000 2100
+Wire Wire Line
+	8000 2100 8000 2200
+$Comp
+L Device:R R2
+U 1 1 5EDD730A
+P 6700 1850
+F 0 "R2" H 6630 1804 50  0000 R CNN
+F 1 "1R" H 6630 1895 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6630 1850 50  0001 C CNN
+F 3 "~" H 6700 1850 50  0001 C CNN
+	1    6700 1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5EDD76B4
+P 7350 1850
+F 0 "R3" H 7280 1804 50  0000 R CNN
+F 1 "1R" H 7280 1895 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7280 1850 50  0001 C CNN
+F 3 "~" H 7350 1850 50  0001 C CNN
+	1    7350 1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5EDD7B78
+P 8000 1850
+F 0 "R4" H 7930 1804 50  0000 R CNN
+F 1 "1R" H 7930 1895 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7930 1850 50  0001 C CNN
+F 3 "~" H 8000 1850 50  0001 C CNN
+	1    8000 1850
+	-1   0    0    1   
+$EndComp
+Text GLabel 4700 2250 0    50   Input ~ 0
+Ctrl
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5EDED6A8
+P 10350 5950
+F 0 "H1" H 10450 5996 50  0000 L CNN
+F 1 "MountingHole" H 10450 5905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 10350 5950 50  0001 C CNN
+F 3 "~" H 10350 5950 50  0001 C CNN
+	1    10350 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J1
+U 1 1 5EE56257
+P 1600 3550
+F 0 "J1" H 1708 3731 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 1708 3640 50  0000 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_SMD_1x2mm" H 1600 3550 50  0001 C CNN
+F 3 "~" H 1600 3550 50  0001 C CNN
+	1    1600 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J2
+U 1 1 5EE5705D
+P 1600 3800
+F 0 "J2" H 1708 3981 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 1708 3890 50  0000 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_SMD_1x2mm" H 1600 3800 50  0001 C CNN
+F 3 "~" H 1600 3800 50  0001 C CNN
+	1    1600 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J3
+U 1 1 5EE5739D
+P 1600 4050
+F 0 "J3" H 1708 4231 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 1708 4140 50  0000 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_SMD_1x2mm" H 1600 4050 50  0001 C CNN
+F 3 "~" H 1600 4050 50  0001 C CNN
+	1    1600 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 3800 2150 3800
+Wire Wire Line
+	1800 3550 2150 3550
+Wire Wire Line
+	2150 3550 2150 3450
+Wire Wire Line
+	1800 4050 2150 4050
+Wire Wire Line
+	2150 4050 2150 4150
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5EE5B3E3
+P 2550 3450
+F 0 "#FLG0101" H 2550 3525 50  0001 C CNN
+F 1 "PWR_FLAG" H 2550 3623 50  0000 C CNN
+F 2 "" H 2550 3450 50  0001 C CNN
+F 3 "~" H 2550 3450 50  0001 C CNN
+	1    2550 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5EE5BB3E
+P 2550 4150
+F 0 "#FLG0102" H 2550 4225 50  0001 C CNN
+F 1 "PWR_FLAG" H 2550 4323 50  0000 C CNN
+F 2 "" H 2550 4150 50  0001 C CNN
+F 3 "~" H 2550 4150 50  0001 C CNN
+	1    2550 4150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2150 4050 2550 4050
+Wire Wire Line
+	2550 4050 2550 4150
+Connection ~ 2150 4050
+Wire Wire Line
+	2150 3550 2550 3550
+Wire Wire Line
+	2550 3550 2550 3450
+Connection ~ 2150 3550
+$Comp
+L Device:R R5
+U 1 1 5EE93234
+P 4850 2550
+F 0 "R5" H 4780 2504 50  0000 R CNN
+F 1 "220R" H 4780 2595 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4780 2550 50  0001 C CNN
+F 3 "~" H 4850 2550 50  0001 C CNN
+	1    4850 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5EE96FC2
+P 4850 2800
+F 0 "#PWR01" H 4850 2550 50  0001 C CNN
+F 1 "GND" H 4855 2627 50  0000 C CNN
+F 2 "" H 4850 2800 50  0001 C CNN
+F 3 "" H 4850 2800 50  0001 C CNN
+	1    4850 2800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 2400 4850 2250
+Connection ~ 4850 2250
+Wire Wire Line
+	4850 2250 4700 2250
+Wire Wire Line
+	4850 2700 4850 2800
+Wire Wire Line
+	4050 2100 4850 2100
+Connection ~ 4850 2100
+Text Notes 2850 3850 0    50   ~ 0
+Ctrl :\n - From 1mA ==> 0% \n - To 11mA ==> 100%
+$EndSCHEMATC
