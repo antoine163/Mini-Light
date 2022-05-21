@@ -7,7 +7,7 @@ This is composed several parts:
 - Wire Ties: To attach some cables.
 
 ## Control box
-![Front view](Meca/control_box/photos/20220313_134010.jpg) 
+![Front view](Meca/control_box/photos/20220521_212042.jpg) 
 For more detail see: [Meca/control_box/README.md](Meca/control_box/README.md) 
 
 ## Light support for shelf
@@ -15,7 +15,4 @@ For more detail see: [Meca/control_box/README.md](Meca/control_box/README.md)
 For more detail see: [Meca/light_support_for_shelf/README.md](Meca/light_support_for_shelf/README.md) 
 
 ## Light support for prusa
-Todo
-
-## Wire Ties
 Todo

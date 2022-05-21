@@ -1,6 +1,7 @@
 # Mini light: Control box
+![Front view](photos/20220521_212042.jpg) 
+Another view with a slider (control_box-AsPotsCap) in v1:
 ![Front view](photos/20220313_134010.jpg) 
-
 ## How to build
 ### List of items to found
 - 1x IEC320 C7 cable.
@@ -18,7 +19,7 @@
 - 1x Mini light control board. See: [Elec/control/README.md](../../Elec/control/README.md) 
 
 ### List of 3D printed parts
-- 1x control_box-AsPotsCap
+- 1x control_box-AsPotsCap_v2 (or control_box-AsPotsCap)
 - 1x control_box-control_box
 - 1x control_box-control_box_lid
 - 1x control_box-Fix1_Power_Supply
@@ -28,6 +29,6 @@
 All 3D parts in .stl format are in to **"stl"** folder. In the folder **"prusa-slicer"** you can found the project of prusa-slicer.
 
 ## Photos to help build
-**Note**: One the photos below there are only two sliders connected.
+**Note**: One the photos below there are only two sliders connected and control_box-AsPotsCap is in v1.
 ![Front view](photos/20220313_134214.jpg) 
 ![Front view](photos/20220313_134308.jpg) 
