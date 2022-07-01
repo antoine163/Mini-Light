@@ -15,4 +15,5 @@ For more detail see: [Meca/control_box/README.md](Meca/control_box/README.md)
 For more detail see: [Meca/light_support_for_shelf/README.md](Meca/light_support_for_shelf/README.md) 
 
 ## Light support for prusa
-Todo
+![Front view](Meca/light_support_for_prusa/photos/20220701_212322.jpg) 
+For more detail see: [Meca/light_support_for_shelf/README.md](Meca/light_support_for_prusa/README.md) 
