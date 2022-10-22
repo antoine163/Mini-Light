@@ -1,4 +1,4 @@
-# Mini light: Light support for shelf
+# Mini light: Light support for beam
 ![Front view](photos/support_light_3d.png) 
 
 ## How to build
