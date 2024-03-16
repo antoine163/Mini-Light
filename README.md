@@ -17,3 +17,7 @@ For more detail see: [Meca/light_support_for_shelf/README.md](Meca/light_support
 ## Light support for prusa
 ![Front view](Meca/light_support_for_prusa/photos/20220701_212322.jpg) 
 For more detail see: [Meca/light_support_for_shelf/README.md](Meca/light_support_for_prusa/README.md) 
+
+
+# 3D Models
+Some 3D models are not included in this project. You will need to download them from the manufacturers website if you need them.
